@@ -1,0 +1,33 @@
+<section class="post comments">
+    
+    
+    <a href="http://taobao.com" class="dsq-brlink" " target="_blank">评论个啥子哦！点我快去给你宝宝买小龙虾去吧~Bye</a>
+    {{!-- <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" media="screen"  --}}
+    
+    <link rel="stylesheet" type="text/css" href="{{asset "css/valine.css"}}" />
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='{{asset "js/Valine.min.js"}}'></script>
+    {{!-- 下面是要加入的内容 --}}
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'ez3Qkq9SAL2BXSoTNnQe320l-gzGzoHsz',
+            appKey: 'WvnVAzqpcYSplaI8BjwYdG5g',
+            pageSize:10,
+            meta:['nick','mail'],
+            avatar:'monsterid',
+            visitor: true,
+            recordIP: true,
+            placeholder: '在这里填写评论哟~',
+            highlight: true,
+            enableQQ: true
+        })
+    </script>
+    
+    <!-- id 将作为查询条件 -->
+<span id="/cq_travel/" class="leancloud_visitors" data-flag-title="Your Article Title">
+    <em class="post-meta-item-text">阅读量 </em>
+    <i class="leancloud-visitors-count">520</i>
+</span>
+</section>

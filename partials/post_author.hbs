@@ -1,0 +1,33 @@
+{{! Everything inside the #author tags pulls data from the author }}
+{{#primary_author}}
+    {{#if profile_image}}
+        <figure class="author-image">
+            <a class="img" href="{{url}}" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></a>
+        </figure>
+    {{/if}}
+{{/primary_author}}
+<figure class="author-info">
+    <section class="author-info-title">
+        <span class="pull-right">{{t "啥时候写的呢"}}：<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time></span>
+        {{#primary_author}}
+        <span>{{t "谁写的呀"}}：{{name}}</span>
+    </section>
+    <section class="author-info-content">
+        {{#if bio}}
+            <span class="author-info-bio">{{bio}}</span>
+        {{else}}
+            <p class="author-info-bio-placeholder">{{t "还想"}} <a href="{{url}}">{{t "看看"}}</a> {{t "我学的其他菜菜吗😊"}}</p>
+        {{/if}}
+        <section class="author-info-social">
+            {{!-- {{#if website}}<a href="{{website}}" class="author-info-social-website">我的站点</a>{{/if}} --}}
+            {{!-- <a href="{{url}}" class="author-info-social-feature">我的专栏</a> --}}
+            <a href="https://food.ohbaby.space/" class="author-info-social-github" target="_blank">{{t "菜篮子主页"}}</a>
+            <a href="https://ohbaby.space/" class="author-info-social-weibo" target="_blank">{{t "Space主页"}}</a>
+            <a href="https://food.ohbaby.space/ghost" class="author-info-social-sf" target="_blank">菜篮子后台</a>
+            <a href="https://ohbaby.space/ghost" class="author-info-social-jj" target="_blank">Space后台</a>
+            <a href="https://gfood.ohbaby.space/" class="author-info-social-github" target="_blank">{{t "菜篮子评论后台"}}</a>
+            <a href="https://ghome.ohbaby.space/" class="author-info-social-weibo" target="_blank">{{t "Space评论后台"}}</a>
+        </section>
+        {{/primary_author}}
+    </section>
+</figure>
