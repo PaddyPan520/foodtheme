@@ -3,7 +3,7 @@
 A Simple And Elegant Ghost Theme Derive From Default Theme Casper.
 
 ![Ghost 3.x](https://img.shields.io/badge/Ghost-v3.x-blue.svg?style=flat-square)
-![Kaldorei 3.0.0](https://img.shields.io/badge/Kaldorei-v3.0.0-009a61.svg?style=flat-square)
+![Paddy 3.0.0](https://img.shields.io/badge/Kaldorei-v3.0.0-009a61.svg?style=flat-square)
 
 English | [简体中文](README_zh.md)
 
@@ -207,4 +207,4 @@ Starting from `Ghost` v3.x version, It provides a new bookmark card feature, it 
 
 ## License
 
-MIT © [xiaoluoboding](https://github.com/xiaoluoboding)
+Copyright © [Paddy](https://github.com/paddypan520)
